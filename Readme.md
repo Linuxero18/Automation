@@ -14,4 +14,6 @@ El objetivo principal es **ahorrar tiempo y esfuerzo** usando scripts de Python 
 
 > “¿Por qué hacerlo a mano si una máquina puede hacerlo por ti?”
 
-[![images.png](https://i.postimg.cc/Kcg9sGBg/images.png)](https://postimg.cc/G9dJ41Mc)
+> 💻 “¿Quién necesita manos cuando tienes a un pingüino y una serpiente de tu lado?”
+![Banner AutoTasks](https://i.postimg.cc/Bn8t2Vds/tux-python.png)
+
