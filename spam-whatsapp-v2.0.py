@@ -9,7 +9,6 @@ import os
 import unicodedata
 import re
 
-# Asegurarse de que pyautogui y pyperclip están instalados
 class AutoMensajesPro:
     def __init__(self):
         self.root = tk.Tk()
