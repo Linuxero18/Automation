@@ -1,5 +1,6 @@
-# WHATSAPP MASIVO V1
+# WHATSAPP MASIVO V1 
 
+## Este es un proyecto base
 1. Ejecutas el archivo .py
 2. Escribes el mensaje a enviar
 3. Digítas la cantidad de mensajes
@@ -7,5 +8,5 @@
 
 ## Dependencias
 
-* `pip install `pyautogui`
-* `pip install `pyperclip` 
+* `pip install pyautogui`
+* `pip install pyperclip` 
