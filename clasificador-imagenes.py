@@ -5,6 +5,12 @@ from datetime import datetime
 from PIL import Image
 from PIL.ExifTags import TAGS
 
+MESES_ESPANOL = {
+    1: "Enero", 2: "Febrero", 3: "Marzo", 4: "Abril",
+    5: "Mayo", 6: "Junio", 7: "Julio", 8: "Agosto",
+    9: "Septiembre", 10: "Octubre", 11: "Noviembre", 12: "Diciembre"
+}
+
 extensiones_imagenes = (
     '.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff', '.tif',
     '.webp', '.heic', '.psd', '.raw', '.cr2', '.nef', '.orf', '.sr2'
@@ -79,9 +85,10 @@ def clasificar_archivos(carpeta, por_mes=False):
             continue
 
         if fecha:
+            # Crear estructura de carpetas según el parámetro por_mes
             if por_mes:
-                # Formato: YYYY/MM-Nombre_Mes
-                nombre_mes = fecha.strftime("%m-%B")  # Ejemplo: "01-January"
+                # Formato: YYYY/Nombre_Mes en español
+                nombre_mes = MESES_ESPANOL[fecha.month]  # Ejemplo: "Enero"
                 carpeta_anio = os.path.join(carpeta, str(fecha.year))
                 carpeta_destino = os.path.join(carpeta_anio, nombre_mes)
             else:
@@ -102,7 +109,8 @@ def clasificar_archivos(carpeta, por_mes=False):
             try:
                 shutil.move(ruta_completa, destino)
                 if por_mes:
-                    print(f"✅ Movido: {archivo} ➜ {fecha.year}/{nombre_mes}")
+                    mes_nombre = MESES_ESPANOL[fecha.month]
+                    print(f"✅ Movido: {archivo} ➜ {fecha.year}/{mes_nombre}")
                 else:
                     print(f"✅ Movido: {archivo} ➜ {fecha.year}")
                 archivos_procesados += 1
