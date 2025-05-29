@@ -4,7 +4,6 @@ import time
 from PIL import Image
 from PIL.ExifTags import TAGS
 
-# Extensiones conocidas para imágenes y videos
 extensiones_imagenes = (
     '.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff', '.tif',
     '.webp', '.heic', '.psd', '.raw', '.cr2', '.nef', '.orf', '.sr2'
