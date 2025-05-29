@@ -9,4 +9,4 @@
 ## Dependencias
 
 * `pip install pyautogui`
-* `pip install pyperclip` 
+* `pip install pyperclip`
